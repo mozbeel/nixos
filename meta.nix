@@ -20,8 +20,8 @@ rec {
   };
 
   keyboard = {
-    layout = "en";
-    variant = ",qwerty";
+    layout = "de";
+      variant = ",qwertz";
   };
 
   cuda = false;

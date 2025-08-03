@@ -107,10 +107,10 @@ in
         (windowBinding ", M, fullscreen, 1")
         (windowBinding "SHIFT, M, fullscreen,")
 
-        (windowBinding ", h, movefocus, l")
-        (windowBinding ", l, movefocus, r")
-        (windowBinding ", k, movefocus, u")
-        (windowBinding ", j, movefocus, d")
+        (windowBinding ", left, movefocus, l")
+        (windowBinding ", right, movefocus, r")
+        (windowBinding ", up, movefocus, u")
+        (windowBinding ", down, movefocus, d")
 
         (windowBinding ", 1, workspace, 1")
         (windowBinding ", 2, workspace, 2")
