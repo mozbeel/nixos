@@ -4,7 +4,7 @@
   programs.git = {
     enable = true;
 
-    userEmail = "git@${meta.domain}";
+    userEmail = meta.git.email;
     userName = meta.git.username;
 
     delta.enable = true;
@@ -22,9 +22,9 @@
       safe.directory = "/nixos";
 
       # commit signing
-      commit.gpgsign = true;
-      gpg.format = "ssh";
-      user.signingkey = "~/.ssh/id_ed25519.pub";
+      # commit.gpgsign = true;
+      # gpg.format = "ssh";
+      # user.signingkey = "~/.ssh/id_ed25519.pub";
 
       # url = {
       #   "ssh://git@github.com/" = {

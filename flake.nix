@@ -1,5 +1,5 @@
 {
-  description = "lukasl-dev";
+  description = "mozbeel";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
@@ -14,8 +14,6 @@
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    sops-nix.url = "github:Mic92/sops-nix";
 
     nil = {
       url = "github:oxalica/nil";
@@ -35,11 +33,8 @@
     catppuccin.url = "github:catppuccin/nix";
     catppuccin-where-is-my-sddm-theme.url = "github:catppuccin/where-is-my-sddm-theme";
 
-    neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
-    zen-browser.url = "github:0xc000022070/zen-browser-flake";
     ghostty.url = "github:ghostty-org/ghostty";
-
-    simple-nixos-mailserver.url = "gitlab:simple-nixos-mailserver/nixos-mailserver/nixos-25.05";
+    zig.url = "github:mitchellh/zig-overlay";
   };
 
   outputs =
@@ -80,26 +75,13 @@
     in
     {
       nixosConfigurations = {
-        vega = nixosSystem ./machines/vega/nixos {
-          hostName = "vega";
-          cuda = true;
+        nebula = nixosSystem ./machines/nebula/nixos {
+          hostName = "nebula";
           hypr = {
             monitors = [
-              "DP-2, 1920x1080@239.96, 0x0, 1"
-              "HDMI-A-1, 1920x1080@74.973, 1920x0, 1"
+              "HDMI-A-1, 2560x1440@144.00Hz, 0x0, 1"
             ];
           };
-        };
-
-        orion = nixosSystem ./machines/orion/nixos {
-          hostName = "orion";
-          hypr = {
-            monitors = [ "eDP-1, 1920x1080@144.02800, 0x0, 1" ];
-          };
-        };
-
-        pollux = nixosSystem ./machines/pollux/nixos {
-          hostName = "pollux";
         };
       };
     };

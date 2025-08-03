@@ -1,5 +1,5 @@
-{ pkgs-unstable, ... }:
+{ inputs, ... }:
 
 {
-  home.packages = [ pkgs-unstable.zig ];
+  # home.packages = [ inputs.zig.packages.master ]; # FIXME: boom
 }

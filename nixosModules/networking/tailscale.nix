@@ -1,13 +1,13 @@
-{ config, ... }:
+# { config, ... }:
 
 {
   services.tailscale = {
     enable = true;
     extraUpFlags = [ "--ssh" ];
-    authKeyFile = config.sops.secrets."tailscale/auth_key".path;
+    # authKeyFile = config.sops.secrets."tailscale/auth_key".path;
   };
 
-  sops.secrets = {
-    "tailscale/auth_key" = { };
-  };
+  # sops.secrets = {
+  #   "tailscale/auth_key" = { };
+  # };
 }

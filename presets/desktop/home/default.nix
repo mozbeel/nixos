@@ -3,7 +3,6 @@
     ../../shared/home
 
     ../../../homeModules/browsers/brave.nix
-    ../../../homeModules/browsers/zen.nix
 
     ../../../homeModules/desktop/wayland/waybar
     ../../../homeModules/desktop/wayland/hyprcursor.nix
@@ -24,7 +23,6 @@
     ../../../homeModules/programs/discord.nix
     ../../../homeModules/programs/nautilus.nix
     ../../../homeModules/programs/obsidian.nix
-    ../../../homeModules/programs/sioyek.nix
 
     ../../../homeModules/terminals/ghostty
   ];

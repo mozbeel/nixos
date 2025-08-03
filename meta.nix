@@ -4,14 +4,15 @@ rec {
   dir = "/home/${user.name}/nixos";
 
   user = {
-    name = "lukas";
-    fullName = "Lukas Leeb";
+    name = "leeb";
+    fullName = "Matthias Leeb";
   };
 
-  domain = "lukasl.dev";
+  domain = "motzi.at";
 
   git = {
-    username = "lukasl-dev";
+    username = "mozbeel";
+    email = "matthiasleeb4@gmail.com";
   };
 
   time = {
@@ -19,7 +20,7 @@ rec {
   };
 
   keyboard = {
-    layout = "us";
+    layout = "en";
     variant = ",qwerty";
   };
 

@@ -13,8 +13,7 @@
 
     mimeApps =
       let
-        browser = [ "zen-beta.desktop" ];
-        sioyek = [ "sioyek.desktop" ];
+        browser = [ "brave.desktop" ];
         imageViewer = if config.programs.feh.enable then [ "feh.desktop" ] else null;
         videoPlayer = if config.programs.mpv.enable then [ "mpv.desktop" ] else null;
       in
@@ -37,7 +36,7 @@
           "x-scheme-handler/https" = browser;
           "x-scheme-handler/unknown" = browser;
           "image/svg+xml" = browser;
-          "application/pdf" = sioyek;
+          "application/pdf" = browser;
 
           "image/jpeg" = imageViewer;
           "image/jpg" = imageViewer;

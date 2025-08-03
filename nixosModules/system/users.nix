@@ -1,21 +1,15 @@
-{
-  meta,
-  config,
-  pkgs,
-  ...
-}:
+{ meta, pkgs, ... }:
 
 {
-  sops.secrets."user/password" = {
-    neededForUsers = true;
-  };
+  # sops.secrets."user/password" = {
+  #   neededForUsers = true;
+  # };
 
   users = {
     defaultUserShell = pkgs.zsh;
     users = {
       root = {
-        openssh.authorizedKeys.keys = [ (builtins.readFile ../../dots/ssh/id_ed25519.pub) ];
-        hashedPasswordFile = config.sops.secrets."user/password".path;
+        # openssh.authorizedKeys.keys = [ (builtins.readFile ../../dots/ssh/id_ed25519.pub) ];
       };
 
       ${meta.user.name} = {
@@ -27,8 +21,7 @@
           "docker"
           "wireshark"
         ];
-        hashedPasswordFile = config.sops.secrets."user/password".path;
-        openssh.authorizedKeys.keys = [ (builtins.readFile ../../dots/ssh/id_ed25519.pub) ];
+        # openssh.authorizedKeys.keys = [ (builtins.readFile ../../dots/ssh/id_ed25519.pub) ];
       };
     };
   };

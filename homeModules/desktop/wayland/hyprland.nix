@@ -60,9 +60,8 @@ in
           "keyctl link @u @s"
           "${config.services.clipse.package}/bin/clipse --listen"
           "${config.services.wpaperd.package}/bin/wpaperd -d"
-          "mullvad-exclude ${config.programs.vesktop.package}/bin/vesktop"
+          "${config.programs.vesktop.package}/bin/vesktop"
           "${config.programs.waybar.package}/bin/waybar"
-          "mullvad-vpn"
         ]
       ];
 
@@ -87,7 +86,7 @@ in
 
           "${mainMod}, T, exec, ghostty"
 
-          "${mainMod}, B, exec, zen-beta"
+          "${mainMod}, B, exec, brave"
 
           "${mainMod}, I, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
           "${mainMod}, O, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
@@ -152,15 +151,6 @@ in
         "float,class:(clipse.clipse)"
         "center,class:(clipse.clipse)"
         "size 622 652,class:(clipse.clipse)"
-
-        # ========= ========= ========= ========= ========= =========
-        # 1Password
-        # ========= ========= ========= ========= ========= =========
-
-        "float,class:(1Password)"
-        "center,class:(1Password)"
-        "opacity 0.8,class:(1Password)"
-        "size 1309 783,class:(1Password)"
 
         # ========= ========= ========= ========= ========= =========
         # Bitwarden
@@ -259,19 +249,6 @@ in
         # ========= ========= ========= ========= ========= =========
         "workspace 10,initialClass:(obsidian)"
         # "noinitialfocus,initialClass:(obsidian)"
-
-        # ========= ========= ========= ========= ========= =========
-        # Zen
-        # ========= ========= ========= ========= ========= =========
-        "float,initialClass:(zen-beta),title:^(Extension:.*)$"
-        "center,initialClass:(zen-beta),title:^(Extension:.*)$"
-        "size 524 706,initialClass:(zen-beta),title:^(Extension:.*)$"
-
-        # ========= ========= ========= ========= ========= =========
-        # Mullvad VPN
-        # ========= ========= ========= ========= ========= =========
-        "float,initialTitle:(Mullvad VPN)"
-        "pin,initialTitle:(Mullvad VPN)"
       ];
 
       input = {
