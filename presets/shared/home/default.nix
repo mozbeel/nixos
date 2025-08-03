@@ -23,6 +23,8 @@
     ../../../homeModules/programs/zip.nix
     ../../../homeModules/programs/zoxide.nix
 
+    ../../../homeModules/security/ssh.nix
+
     ../../../homeModules/shells/oh-my-posh
     ../../../homeModules/shells/television
     ../../../homeModules/shells/tmux
