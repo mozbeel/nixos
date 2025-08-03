@@ -9,6 +9,7 @@
     ../../../homeModules/development/go.nix
     ../../../homeModules/development/java.nix
     ../../../homeModules/development/javascript.nix
+    ../../../homeModules/development/zig.nix
 
     ../../../homeModules/editors/jetbrains/idea-ultimate.nix
 
