@@ -20,5 +20,6 @@
     ../../../homeModules/gaming/protonplus.nix
     ../../../homeModules/gaming/protonup-qt.nix
     ../../../homeModules/gaming/r2modman.nix
+    ../../../homeModules/gaming/obs.nix
   ];
 }
