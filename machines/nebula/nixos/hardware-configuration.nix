@@ -5,6 +5,7 @@
   config,
   lib,
   modulesPath,
+  pkgs,
   ...
 }:
 
@@ -21,9 +22,16 @@
     "usbhid"
     "sd_mod"
   ];
+
   boot.initrd.kernelModules = [ ];
-  boot.kernelModules = [ "kvm-amd" ];
+  boot.kernelModules = [
+    "kvm-amd"
+    "i2c-dev"
+    "ddcci_backlight"
+  ];
   boot.extraModulePackages = [ ];
+
+  hardware.enableAllFirmware = true;
 
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/1b451a64-c01d-4250-a88c-709048fdce3e";

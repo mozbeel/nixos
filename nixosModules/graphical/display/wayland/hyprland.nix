@@ -54,6 +54,7 @@ in
       pkgs.grim
       pkgs.slurp
       pkgs.hyprshot
+      pkgs.ddcutil
     ];
   };
 

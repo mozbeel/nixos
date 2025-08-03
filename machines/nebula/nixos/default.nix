@@ -42,10 +42,11 @@
   home-manager.users.${meta.user.name} = import ../home {
     inherit inputs pkgs pkgs-unstable;
   };
-  
+
   environment.systemPackages = [
     pkgs.lmms
     pkgs.spotify
+    pkgs.whatsie
   ];
 
   services.printing.enable = true;
