@@ -64,6 +64,11 @@
           enabled = true;
           addBack = true;
         };
+        VolumeBooster = {
+          enabled = true;
+          volumeMultiplier = 2;
+        };
+
         Settings = {
           enabled = true;
           settingsLocation = "aboveNitro";
