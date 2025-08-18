@@ -249,6 +249,16 @@ in
         # ========= ========= ========= ========= ========= =========
         "workspace 10,initialClass:(obsidian)"
         # "noinitialfocus,initialClass:(obsidian)"
+
+        # ========= ========= ========= ========= ========= =========
+        # SDL
+        # ========= ========= ========= ========= ========= =========
+
+        "float,initialTitle:(Nashi Test)"
+        "noanim,initialClass:^(NashiTest\*\s1\.20\.6)$"
+        "noblur,initialClass:^(NashiTest\*\s1\.20\.6)$"
+
+
       ];
 
       input = {

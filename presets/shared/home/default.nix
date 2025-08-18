@@ -19,6 +19,7 @@
     ../../../homeModules/programs/gh.nix
     ../../../homeModules/programs/mpv.nix
     ../../../homeModules/programs/ripgrep.nix
+    ../../../homeModules/development/vs-code.nix
     ../../../homeModules/programs/yazi.nix
     ../../../homeModules/programs/zip.nix
     ../../../homeModules/programs/zoxide.nix

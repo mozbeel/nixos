@@ -32,6 +32,7 @@
   boot.extraModulePackages = [ ];
 
   hardware.enableAllFirmware = true;
+  hardware.steam-hardware.enable = true;
 
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/1b451a64-c01d-4250-a88c-709048fdce3e";

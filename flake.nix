@@ -39,6 +39,7 @@
 
   outputs =
     {
+      self,
       nixpkgs,
       nixpkgs-unstable,
       nixgl,
@@ -74,6 +75,14 @@
         };
     in
     {
+      packages = {
+        x86_64-linux = {
+          default = inputs.hyprland.packages.${system}.hyprland;
+        };
+      };
+
+      defaultPackage = inputs.hyprland.packages.${system}.hyprland;
+
       nixosConfigurations = {
         nebula = nixosSystem ./machines/nebula/nixos {
           hostName = "nebula";
