@@ -34,7 +34,9 @@
     catppuccin-where-is-my-sddm-theme.url = "github:catppuccin/where-is-my-sddm-theme";
 
     ghostty.url = "github:ghostty-org/ghostty";
+
     zig.url = "github:mitchellh/zig-overlay";
+    zls.url = "github:zigtools/zls";
   };
 
   outputs =
@@ -60,7 +62,11 @@
               cudaSupport = updatedMeta.cuda;
             };
 
-            overlays = [ nixgl.overlay ];
+            overlays = [
+              nixgl.overlay
+
+              inputs.zig.overlays.default
+            ];
           };
           specialArgs = {
             inherit inputs pkgs-unstable;

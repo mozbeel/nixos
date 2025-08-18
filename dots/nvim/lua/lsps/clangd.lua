@@ -1,8 +1,9 @@
 return {
-  cmd = { "clangd", "--background-index" },
-  filetypes = { "c", "cpp", "objc", "objcpp" },
-  root_dir = require("lspconfig.util").root_pattern(
-    "compile_commands.json",
-    ".git"
-  ),
+  cmd = { "clangd", "--background-index", "--clang-tidy", "--log=verbose" },
+  init_options = {
+    fallbackFlags = { "-std=c++17" },
+  },
+  -- cmd = { "clangd" },
+  -- root_markers = { ".clangd", "compile_commands.json" },
+  -- filetypes = { "c", "cpp" },
 }
