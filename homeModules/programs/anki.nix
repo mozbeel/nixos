@@ -1,5 +1,5 @@
-{ pkgs-unstable, ... }:
+{ pkgs, ... }:
 
 {
-  home.packages = [ pkgs-unstable.anki ];
+  home.packages = [ pkgs.anki ];
 }

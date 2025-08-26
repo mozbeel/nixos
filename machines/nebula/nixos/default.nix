@@ -45,7 +45,6 @@
 
   environment.systemPackages = [
     pkgs.lmms
-    pkgs.spotify
     pkgs.whatsie
     pkgs.xdg-utils
     pkgs.ferium
@@ -101,6 +100,16 @@
   programs.alvr = {
     enable = true;
     openFirewall = true;
+  };
+
+  services.spotifyd = {
+    enable = true;
+    settings = {
+      global = {
+        username = "Alex";
+        password = "foo";
+      };
+    };
   };
 
   services.printing.enable = true;
