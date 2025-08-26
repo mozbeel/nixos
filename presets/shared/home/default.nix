@@ -7,6 +7,8 @@
     ../../../homeModules/development/lua.nix
     ../../../homeModules/development/nix.nix
     ../../../homeModules/development/python.nix
+    ../../../homeModules/development/vs-code.nix
+    ../../../homeModules/development/devenv.nix
 
     ../../../homeModules/programs/bat.nix
     ../../../homeModules/programs/btop.nix
@@ -19,7 +21,6 @@
     ../../../homeModules/programs/gh.nix
     ../../../homeModules/programs/mpv.nix
     ../../../homeModules/programs/ripgrep.nix
-    ../../../homeModules/development/vs-code.nix
     ../../../homeModules/programs/yazi.nix
     ../../../homeModules/programs/zip.nix
     ../../../homeModules/programs/zoxide.nix

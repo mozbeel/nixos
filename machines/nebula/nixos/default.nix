@@ -46,6 +46,7 @@
   environment.systemPackages = [
     pkgs.lmms
     pkgs.whatsie
+    pkgs.spotify
     pkgs.xdg-utils
     pkgs.ferium
     pkgs.prismlauncher

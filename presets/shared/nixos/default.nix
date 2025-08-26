@@ -7,7 +7,6 @@
     ../../../nixosModules/networking/tailscale.nix
 
     ../../../nixosModules/nixos/caches
-    ../../../nixosModules/nixos/devenv.nix
     ../../../nixosModules/nixos/home-manager.nix
     ../../../nixosModules/nixos/nh.nix
     ../../../nixosModules/nixos/nix-ld.nix
