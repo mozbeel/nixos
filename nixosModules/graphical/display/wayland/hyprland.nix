@@ -16,6 +16,8 @@ in
 {
   imports = [ ../../../nixos/caches/hyprland.nix ];
 
+  systemd.services.hyprland.requires = [ "network-online.target" ];
+
   programs.hyprland = {
     enable = true;
 

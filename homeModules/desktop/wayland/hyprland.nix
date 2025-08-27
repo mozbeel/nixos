@@ -62,6 +62,8 @@ in
           "${config.services.wpaperd.package}/bin/wpaperd -d"
           "${config.programs.vesktop.package}/bin/vesktop"
           "${config.programs.waybar.package}/bin/waybar"
+
+          "spotify"
         ]
       ];
 
@@ -258,6 +260,10 @@ in
         "noanim,initialClass:^(NashiTest\*\s1\.20\.6)$"
         "noblur,initialClass:^(NashiTest\*\s1\.20\.6)$"
 
+        # ========= ========= ========= ========= ========= =========
+        # Spotify
+        # ========= ========= ========= ========= ========= =========
+        "workspace 1,class:^(spotify)$"
 
       ];
 
