@@ -35,6 +35,13 @@ map("n", "<leader>tq", ":tabclose<CR>", { silent = true })
 -- ToggleTerm
 -- ====================================================================
 
+map("n", "<leader>tt", ":ToggleTerm<CR>", { silent = true })
+map("t", "<Esc>tt", function()
+  -- switch to terminal normal mode, then close terminal
+  vim.cmd "stopinsert" -- exit insert/terminal mode
+  vim.cmd "ToggleTerm" -- closes terminal if open
+end, { silent = true })
+
 -- ====================================================================
 -- diagnostic
 -- ====================================================================
@@ -131,7 +138,7 @@ map("n", "gs", ":Telescope lsp_document_symbols<CR>", { silent = true })
 map("n", "gi", ":Telescope lsp_implementations<CR>", { silent = true })
 map("n", "gd", ":Telescope lsp_definitions<CR>", { silent = true })
 map("n", "gr", ":Telescope lsp_references<CR>", { silent = true })
-map("e", "gl", ":Telescope diagnostics<CR>", { silent = true })
+map("n", "gl", ":Telescope diagnostics<CR>", { silent = true })
 
 -- ====================================================================
 -- copilot
