@@ -2,6 +2,8 @@
 
 {
   imports = [
+    ../../../nixosModules/development/gemini.nix
+
     ../../../nixosModules/networking/firewall.nix
     ../../../nixosModules/networking/dns.nix
     ../../../nixosModules/networking/tailscale.nix

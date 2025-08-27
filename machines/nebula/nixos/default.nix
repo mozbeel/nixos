@@ -61,7 +61,6 @@
     pkgs.clang-tools
     pkgs.cmake
     pkgs.premake
-    pkgs.gemini-cli
   ];
 
   services.wivrn = {

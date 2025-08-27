@@ -7,7 +7,7 @@ list:
     @echo '{{ available_systems }}' | nix-shell -p jq --run "jq --raw-output .[]"
 
 switch:
-    nix-shell -p nh --run "nh os switch"
+    nix-shell -p nh --run "nh os switch "
 
 build:
     nix-shell -p nh --run "nh os build"

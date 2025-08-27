@@ -1,0 +1,10 @@
+{
+  "theme": "Dracula",
+  "selectedAuthType": "oauth-personal",
+  "mcpServers": {
+    "rime": {
+      "command": "nix",
+      "args": ["run", "github:lukasl-dev/rime", "--", "stdio"]
+    }
+  }
+}
