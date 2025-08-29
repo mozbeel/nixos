@@ -2,7 +2,22 @@
 
 {
   imports = [
+    ../../../nixosModules/audio/lmms.nix
+
+    ../../../nixosModules/apps/whatsie.nix
+    ../../../nixosModules/apps/spotify.nix
+
+    ../../../nixosModules/art/krita.nix
+
     ../../../nixosModules/development/gemini.nix
+    ../../../nixosModules/development/android.nix
+    ../../../nixosModules/development/cpp.nix
+
+    ../../../nixosModules/gaming/minecraft.nix
+    ../../../nixosModules/gaming/vr.nix
+    ../../../nixosModules/gaming/steam.nix
+    ../../../nixosModules/gaming/gamemode.nix
+    ../../../nixosModules/gaming/flatpak.nix
 
     ../../../nixosModules/networking/firewall.nix
     ../../../nixosModules/networking/dns.nix
@@ -23,6 +38,8 @@
     ../../../nixosModules/system/shell.nix
     ../../../nixosModules/system/udiskie.nix
     ../../../nixosModules/system/users.nix
+    ../../../nixosModules/system/bluetooth.nix
+    ../../../nixosModules/system/printing.nix
 
     ../../../nixosModules/themes/catppuccin.nix
 

@@ -4,13 +4,14 @@
   imports = [
     ../../../homeModules/editors/neovim.nix
 
-
     ../../../homeModules/development/lua.nix
     ../../../homeModules/development/gemini.nix
     ../../../homeModules/development/nix.nix
     ../../../homeModules/development/python.nix
     ../../../homeModules/development/vs-code.nix
     ../../../homeModules/development/devenv.nix
+
+    ../../../homeModules/gaming/mangohud.nix
 
     ../../../homeModules/programs/bat.nix
     ../../../homeModules/programs/btop.nix

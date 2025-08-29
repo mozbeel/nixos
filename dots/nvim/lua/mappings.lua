@@ -3,26 +3,35 @@ local map = vim.keymap.set
 -- ====================================================================
 -- editing
 -- ====================================================================
-map("n", "<C-j>", "':m .+' .. v:count1 .. '<CR>=='", {
+map("n", "<C-Down>", "':m .+' .. v:count1 .. '<CR>=='", {
   expr = true,
   silent = true,
   desc = "Move line down by [count]",
 })
 map(
   "n",
-  "<C-k>",
+  "<C-Up>",
   "':m .-' .. (v:count1 + 1) .. '<CR>=='",
   { expr = true, silent = true, desc = "Move line up by [count]" }
 )
 
+map("v", "<C-Down>", function()
+  return ":m '>+" .. vim.v.count1 .. "<CR>gv=gv"
+end, { expr = true, silent = true, desc = "Move selection down [count]" })
+
+-- Move visual block up
+map("v", "<C-Up>", function()
+  return ":m '<-" .. (vim.v.count1 + 1) .. "<CR>gv=gv"
+end, { expr = true, silent = true, desc = "Move selection up [count]" })
+
 -- ====================================================================
 -- lsp
 -- ====================================================================
-
 map("n", "gD", vim.lsp.buf.declaration, { silent = true })
+
 map("n", "gd", vim.lsp.buf.definition, { silent = true })
-map("n", "gi", vim.lsp.buf.implementation, { silent = true })
 map("n", "gs", vim.lsp.buf.signature_help, { silent = true })
+map("n", "gi", vim.lsp.buf.implementation, { silent = true })
 
 -- ====================================================================
 -- tabs
@@ -30,12 +39,13 @@ map("n", "gs", vim.lsp.buf.signature_help, { silent = true })
 
 map("n", "<leader>tn", ":tabnew<CR>", { silent = true })
 map("n", "<leader>tq", ":tabclose<CR>", { silent = true })
+map("n", "<leader>ts", ":tab split<CR>", { silent = true })
 
 -- ====================================================================
 -- ToggleTerm
 -- ====================================================================
 
-map("n", "<leader>tt", ":ToggleTerm<CR>", { silent = true })
+map("n", "<leader>tt", ":wa!<CR>:ToggleTerm<CR>", { silent = true })
 map("t", "<Esc>tt", function()
   -- switch to terminal normal mode, then close terminal
   vim.cmd "stopinsert" -- exit insert/terminal mode

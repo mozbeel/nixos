@@ -249,7 +249,7 @@ in
         # ========= ========= ========= ========= ========= =========
         # Obsidian
         # ========= ========= ========= ========= ========= =========
-        "workspace 10,initialClass:(obsidian)"
+        "workspace 6,initialClass:(obsidian)"
         # "noinitialfocus,initialClass:(obsidian)"
 
         # ========= ========= ========= ========= ========= =========
@@ -264,6 +264,11 @@ in
         # Spotify
         # ========= ========= ========= ========= ========= =========
         "workspace 1,class:^(spotify)$"
+
+        # ========= ========= ========= ========= ========= =========
+        # Whatsie (Whatsapp Linux Client)
+        # ========= ========= ========= ========= ========= =========
+        # "workspace 3,class:(whatsie)"
 
       ];
 
