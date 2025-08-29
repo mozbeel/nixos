@@ -12,6 +12,7 @@
 
     initContent = ''
       source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+      source ${./functions.sh}
       bindkey "''${key[Up]}" up-line-or-search
     '';
   };

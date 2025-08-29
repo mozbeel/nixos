@@ -4,6 +4,7 @@ return {
       ["rust-analyzer"] = {
         check = {
           command = "clippy",
+          extraArgs = { "--all-targets", "--workspace" },
         },
         diagnostics = {
           enable = true,
@@ -12,6 +13,10 @@ return {
           buildScripts = {
             enable = true,
           },
+          allFeatures = true,
+        },
+        procMacro = {
+          enable = true,
         },
       },
     },

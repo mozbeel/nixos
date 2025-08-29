@@ -12,6 +12,7 @@
     ../../../nixosModules/development/gemini.nix
     ../../../nixosModules/development/android.nix
     ../../../nixosModules/development/cpp.nix
+    ../../../nixosModules/apps/qemu.nix
 
     ../../../nixosModules/gaming/minecraft.nix
     ../../../nixosModules/gaming/vr.nix
@@ -40,6 +41,7 @@
     ../../../nixosModules/system/users.nix
     ../../../nixosModules/system/bluetooth.nix
     ../../../nixosModules/system/printing.nix
+    ../../../nixosModules/system/xdg-utils.nix
 
     ../../../nixosModules/themes/catppuccin.nix
 

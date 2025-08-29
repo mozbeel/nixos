@@ -10,6 +10,7 @@
     ../../../homeModules/development/java.nix
     ../../../homeModules/development/javascript.nix
     ../../../homeModules/development/zig.nix
+    ../../../homeModules/development/rust.nix
 
     ../../../homeModules/editors/jetbrains/idea-ultimate.nix
 
