@@ -82,18 +82,7 @@
           specialArgs = specialArgs // {
             meta = updatedMeta;
           };
-          modules = [
-            {
-              nixpkgs.overlays = [
-                (final: prev: {
-                  tailscale = prev.tailscale.overrideAttrs (old: {
-                    doCheck = false;
-                  });
-                })
-              ];
-            }
-            module
-          ];
+          modules = [ module ];
         };
     in
     {
@@ -103,7 +92,7 @@
         };
       };
 
-      
+      defaultPackage = inputs.hyprland.packages.${system}.hyprland;
 
       nixosConfigurations = {
         nebula = nixosSystem ./machines/nebula/nixos {
