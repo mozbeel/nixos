@@ -24,22 +24,20 @@ vim.schedule(function()
 end)
 
 vim.schedule(function()
-  local lspconfig = require "lspconfig"
-
   local files = vim.api.nvim_get_runtime_file("lua/lsps/*.lua", true)
   for _, file in ipairs(files) do
     local lsp_name = file:match("([^/]+)%.%w+$")
 
-    local server = lspconfig[lsp_name]
-    if server then
-      local ok, module = pcall(require, "lsps." .. lsp_name)
-      if ok and module then
-        local server_opts = module.config or module
-        server.setup(server_opts)
+    local module = require("lsps." .. lsp_name)
+    if module ~= nil then
+      if module.config ~= nil then
+        vim.lsp.config(lsp_name, module.config)
       end
+      vim.lsp.enable(lsp_name)
     end
   end
 end)
+
 
 vim.cmd.colorscheme("catppuccin")
 

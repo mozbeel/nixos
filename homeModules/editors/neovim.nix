@@ -30,6 +30,9 @@
       # Rust
       rustc
       cargo
+      rust-analyzer
+      clippy
+      rustfmt
 
       # Lua
       lua-language-server
@@ -39,6 +42,9 @@
 
       # NodeJS
       nodejs
+
+      # Wasm (dont ask)
+      wasm-language-tools
     ];
   };
 
