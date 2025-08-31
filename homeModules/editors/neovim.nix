@@ -45,10 +45,6 @@
 
       # Wasm (dont ask)
       wasm-language-tools
-
-      # C++
-      clang-tools
-      clang
     ];
   };
 
