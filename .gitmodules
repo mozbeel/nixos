@@ -1,3 +1,6 @@
 [submodule "dots/zen-browser/catppuccin"]
 	path = dots/zen-browser/catppuccin
 	url = https://github.com/catppuccin/zen-browser.git
+[submodule "dots/bluej/bluej-dark-themes"]
+	path = dots/bluej/bluej-dark-themes
+	url = https://github.com/realspal/bluej-dark-themes.git

@@ -3,6 +3,7 @@
 {
   imports = [
     ../../../homeModules/editors/neovim.nix
+    ../../../homeModules/editors/bluej.nix
 
     ../../../homeModules/development/lua.nix
     ../../../homeModules/development/gemini.nix
