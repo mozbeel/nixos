@@ -69,13 +69,7 @@ in
     extraPackages = [ hypr-nixpkgs.rocmPackages.clr ];
   };
 
-  # xdg.portal = {
-  #   config = {
-  #     hyprland.default = [
-  #       "gtk"
-  #       "hyprland"
-  #     ];
-  #   };
-  #   extraPortals = [ xdg-desktop-portal-hyprland ];
-  # };
+  xdg.portal = {
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  };
 }

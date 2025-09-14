@@ -46,6 +46,8 @@
     ../../../nixosModules/themes/catppuccin.nix
 
     ../../../nixosModules/virtualisations/docker.nix
+    ../../../nixosModules/system/xdg-portal.nix
+
   ];
 
   networking.hostName = meta.hostName;
