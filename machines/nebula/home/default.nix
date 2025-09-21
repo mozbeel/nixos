@@ -21,5 +21,6 @@
     ../../../homeModules/gaming/protonup-qt.nix
     ../../../homeModules/gaming/r2modman.nix
     ../../../homeModules/gaming/obs.nix
+    ../../../homeModules/system/sound/agc.nix
   ];
 }

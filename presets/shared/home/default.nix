@@ -11,6 +11,8 @@
     ../../../homeModules/development/python.nix
     ../../../homeModules/development/vs-code.nix
     ../../../homeModules/development/devenv.nix
+    ../../../homeModules/development/godot.nix
+    ../../../homeModules/development/unity.nix
 
     ../../../homeModules/gaming/mangohud.nix
 

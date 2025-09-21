@@ -70,6 +70,10 @@ in
   };
 
   xdg.portal = {
-    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gtk
+      pkgs.xdg-desktop-portal-wlr
+    ];
+    config.common.default = [ "wlr" "hyprland" "gtk" ];
   };
 }
