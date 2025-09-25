@@ -12,6 +12,7 @@
     ../../../homeModules/development/vs-code.nix
     ../../../homeModules/development/devenv.nix
     ../../../homeModules/development/godot.nix
+    ../../../homeModules/development/csharp.nix
     ../../../homeModules/development/unity.nix
 
     ../../../homeModules/gaming/mangohud.nix

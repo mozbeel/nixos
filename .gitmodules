@@ -4,3 +4,6 @@
 [submodule "dots/bluej/bluej-dark-themes"]
 	path = dots/bluej/bluej-dark-themes
 	url = https://github.com/realspal/bluej-dark-themes.git
+[submodule "dots/unityhub/neovim"]
+	path = dots/unityhub/neovim
+	url = https://github.com/Domeee/com.cloudedmountain.ide.neovim

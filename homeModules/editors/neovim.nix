@@ -17,6 +17,10 @@
       gnumake
       ripgrep
 
+      # C#
+      omnisharp-roslyn
+      mono
+
       # Nix
       nixd
       nixfmt-rfc-style
