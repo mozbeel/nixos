@@ -2,7 +2,7 @@ return {
   "saghen/blink.cmp",
 
   -- version = "1.*",
-  build = "nix run --accept-flake-config .#build-plugin",
+  -- build = "nix run --accept-flake-config .#build-plugin",
 
   dependencies = { "rafamadriz/friendly-snippets" },
 

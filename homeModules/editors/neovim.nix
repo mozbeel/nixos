@@ -18,8 +18,8 @@
       ripgrep
 
       # C#
-      omnisharp-roslyn
       mono
+      omnisharp-roslyn
 
       # Nix
       nixd
