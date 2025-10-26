@@ -13,7 +13,7 @@ let
   # window bindings should be triggerable with main mod and alt respectively
   windowBinding = s: [
     "${mainMod} ${s}"
-    "ALT ${s}"
+    # "ALT ${s}"
   ];
 
   rofi = config.programs.rofi.enable;
@@ -288,6 +288,10 @@ in
 
         repeat_rate = 25;
         repeat_delay = 200;
+
+        tablet = {
+          output = "HDMI-A-1";
+        };
       };
 
       general = {

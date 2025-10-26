@@ -10,7 +10,8 @@
           ]
           actions = {
             "update-props" = {
-              "alsa.agc.enable" = false
+              "alsa.agc.enable" = false,
+              "node.volume" = 7.5
             }
           }
         }

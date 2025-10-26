@@ -55,24 +55,25 @@
     let
       system = "x86_64-linux";
 
+      pkgs-unstable = import nixpkgs-unstable {
+        inherit system;
+
+        config = {
+          allowUnfree = true;
+          cudaSupport = (import ./meta.nix).cuda;
+        };
+
+        overlays = [
+          nixgl.overlay
+
+          inputs.zig.overlays.default
+        ];
+      };
+
       nixosSystem =
         module: overrideMeta:
         let
           updatedMeta = (import ./meta.nix) // overrideMeta;
-          pkgs-unstable = import nixpkgs-unstable {
-            inherit system;
-
-            config = {
-              allowUnfree = true;
-              cudaSupport = updatedMeta.cuda;
-            };
-
-            overlays = [
-              nixgl.overlay
-
-              inputs.zig.overlays.default
-            ];
-          };
           specialArgs = {
             inherit inputs pkgs-unstable;
           };
@@ -104,5 +105,6 @@
           };
         };
       };
+
     };
 }

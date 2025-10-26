@@ -15,6 +15,8 @@
     ../../../nixosModules/system/sound/pipewire.nix
     ../../../nixosModules/system/appimage.nix
     ../../../nixosModules/system/udiskie.nix
+    ../../../nixosModules/system/opentabletdriver.nix
+    ../../../nixosModules/system/huion.nix
   ];
 
   networking.domain = "desktops.${meta.domain}";

@@ -3,6 +3,7 @@ return {
     ebnf = "ebnf",
     mdx = "markdown",
     templ = "templ",
+    tl = "teal",
   },
 
   filename = {

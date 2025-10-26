@@ -3,9 +3,11 @@
 {
   imports = [
     ../../../nixosModules/audio/lmms.nix
+    ../../../nixosModules/audio/reaper.nix
 
     ../../../nixosModules/apps/whatsie.nix
     ../../../nixosModules/apps/spotify.nix
+    ../../../nixosModules/apps/blender.nix
 
     ../../../nixosModules/art/krita.nix
 
@@ -13,6 +15,8 @@
     ../../../nixosModules/development/android.nix
     ../../../nixosModules/development/cpp.nix
     ../../../nixosModules/apps/qemu.nix
+
+    ../../../nixosModules/graphical/vulkan.nix
 
     ../../../nixosModules/gaming/minecraft.nix
     ../../../nixosModules/gaming/vr.nix

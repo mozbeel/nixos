@@ -1,5 +1,9 @@
 { pkgs, ... }:
 {
-  home.packages = [ pkgs.unityhub ];
+  home.packages = [ 
+    pkgs.unityhub
+    pkgs.libunity
+    pkgs.unity-test
+  ];
 }
 

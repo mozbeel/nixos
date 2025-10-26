@@ -12,6 +12,7 @@
 
     extraPackages = with pkgs-unstable; [
       # Tools
+      tree-sitter
       sqlite
       gcc
       gnumake
@@ -40,6 +41,8 @@
 
       # Lua
       lua-language-server
+      luaPackages.tl
+      luaPackages.teal-language-server
 
       # Bash
       bash-language-server
@@ -47,8 +50,7 @@
       # NodeJS
       nodejs
 
-      # Wasm (dont ask)
-      wasm-language-tools
+      asm-lsp
     ];
   };
 

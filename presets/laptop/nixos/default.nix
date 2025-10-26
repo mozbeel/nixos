@@ -6,9 +6,11 @@
 
     ../../../nixosModules/system/thermald.nix
     ../../../nixosModules/system/tlp.nix
+    ../../../nixosModules/system/opentabletdriver.nix
+
   ];
 
-  environment.systemPackages =  [
+  environment.systemPackages = [
     pkgs.brightnessctl
   ];
 }
