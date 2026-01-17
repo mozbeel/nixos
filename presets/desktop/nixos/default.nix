@@ -6,6 +6,7 @@
 
     ../../../nixosModules/apps/localsend.nix
     ../../../nixosModules/apps/seahorse.nix
+    ../../../nixosModules/apps/waydroid.nix
 
     ../../../nixosModules/graphical/desktop/sddm
     ../../../nixosModules/graphical/display/wayland/hyprland.nix

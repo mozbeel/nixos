@@ -13,7 +13,7 @@ in
     pkgs-unstable.prismlauncher
     pkgs-unstable.lunar-client
 
-    (lib.mkIf wayland pkgs-unstable.glfw-wayland-minecraft)
+    (lib.mkIf wayland pkgs-unstable.glfw3-minecraft)
   ];
 
   # prismlauncher settings:

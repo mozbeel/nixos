@@ -5,19 +5,18 @@
     ../../../homeModules/browsers/firefox.nix
 
     ../../../homeModules/editors/neovim.nix
-    ../../../homeModules/editors/bluej.nix
 
     ../../../homeModules/development/assembly.nix
     ../../../homeModules/development/lua.nix
     ../../../homeModules/development/gemini.nix
     ../../../homeModules/development/nix.nix
+    ../../../homeModules/development/kotlin.nix
     ../../../homeModules/development/python.nix
     ../../../homeModules/development/vs-code.nix
     ../../../homeModules/development/devenv.nix
     ../../../homeModules/development/godot.nix
     ../../../homeModules/development/csharp.nix
     ../../../homeModules/development/unity.nix
-    ../../../homeModules/development/roblox.nix
 
     ../../../homeModules/gaming/mangohud.nix
 

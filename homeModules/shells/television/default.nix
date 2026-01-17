@@ -8,11 +8,12 @@
 let
   ns = pkgs.writeShellApplication {
     name = "ns";
-    runtimeInputs = with pkgs; [
+    runtimeInputs = with pkgs-unstable; [
       fzf
       nix-search-tv
     ];
-    text = builtins.readFile "${pkgs.nix-search-tv.src}/nixpkgs.sh";
+    text = builtins.readFile "${pkgs-unstable.nix-search-tv.src}/nixpkgs.sh";
+    checkPhase = "";
   };
 in
 {

@@ -7,6 +7,7 @@
 
     profiles.default = {
       isDefault = true;
+      extensions.force = true;
     };
   };
 }

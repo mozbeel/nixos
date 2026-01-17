@@ -6,7 +6,7 @@ return {
     cmd = { "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
 
     opts = {
-      ensure_installed = { "lua", "luadoc", "printf", "vim", "vimdoc", "teal" },
+      ensure_installed = { "lua", "luadoc", "printf", "vim", "vimdoc", "teal", "gleam" },
 
       highlight = {
         enable = true,

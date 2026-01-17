@@ -21,6 +21,8 @@
           "docker"
           "wireshark"
           "i2c"
+          "render"
+          "video"
         ];
         # openssh.authorizedKeys.keys = [ (builtins.readFile ../../dots/ssh/id_ed25519.pub) ];
       };

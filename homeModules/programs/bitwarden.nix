@@ -2,7 +2,7 @@
 
 {
   home.packages = [
-    pkgs-unstable.bitwarden
+    pkgs-unstable.bitwarden-desktop
     pkgs-unstable.bitwarden-cli
   ];
 }

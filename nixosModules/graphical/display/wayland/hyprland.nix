@@ -60,20 +60,16 @@ in
     ];
   };
 
-  hardware.graphics = {
-    package = hypr-nixpkgs.mesa;
-
-    enable32Bit = true;
-    package32 = hypr-nixpkgs.pkgsi686Linux.mesa;
-
-    extraPackages = [ hypr-nixpkgs.rocmPackages.clr ];
-  };
 
   xdg.portal = {
     extraPortals = [
       pkgs.xdg-desktop-portal-gtk
       pkgs.xdg-desktop-portal-wlr
     ];
-    config.common.default = [ "wlr" "hyprland" "gtk" ];
+    config.common.default = [
+      "wlr"
+      "hyprland"
+      "gtk"
+    ];
   };
 }

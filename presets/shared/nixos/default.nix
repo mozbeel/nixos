@@ -8,6 +8,7 @@
     ../../../nixosModules/apps/whatsie.nix
     ../../../nixosModules/apps/spotify.nix
     ../../../nixosModules/apps/blender.nix
+    ../../../nixosModules/apps/libreoffice.nix
 
     ../../../nixosModules/art/krita.nix
 

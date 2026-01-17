@@ -88,7 +88,7 @@ in
 
           "${mainMod}, T, exec, ghostty"
 
-          "${mainMod}, B, exec, brave"
+          "${mainMod}, B, exec, helium"
 
           "${mainMod}, I, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
           "${mainMod}, O, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
@@ -110,9 +110,13 @@ in
         (windowBinding "SHIFT, M, fullscreen,")
 
         (windowBinding ", left, movefocus, l")
+        (windowBinding ", h, movefocus, l")
         (windowBinding ", right, movefocus, r")
+        (windowBinding ", l, movefocus, r")
         (windowBinding ", up, movefocus, u")
+        (windowBinding ", k, movefocus, u")
         (windowBinding ", down, movefocus, d")
+        (windowBinding ", j, movefocus, d")
 
         (windowBinding ", 1, workspace, 1")
         (windowBinding ", 2, workspace, 2")
@@ -337,9 +341,9 @@ in
         preserve_split = "yes";
       };
 
-      gestures = {
-        workspace_swipe = "off";
-      };
+      # gestures = {
+      #   workspace_swipe = "off";
+      # };
 
       misc = {
         force_default_wallpaper = 0;

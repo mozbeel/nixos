@@ -1,5 +1,6 @@
 { pkgs, ... }:
 {
+  # this breaks because gradle 7 is outdated
   home.packages = [
     pkgs.bluej
   ];

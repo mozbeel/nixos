@@ -11,7 +11,7 @@ in
 {
   programs.rofi = {
     enable = true;
-    package = lib.mkIf wayland pkgs.rofi-wayland;
+    package = lib.mkIf wayland pkgs.rofi;
     theme = ./theme.rasi;
   };
 

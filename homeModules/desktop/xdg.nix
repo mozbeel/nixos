@@ -13,7 +13,7 @@
 
     mimeApps =
       let
-        browser = [ "brave.desktop" ];
+        browser = [ "helium.desktop" ];
         imageViewer = if config.programs.feh.enable then [ "feh.desktop" ] else null;
         videoPlayer = if config.programs.mpv.enable then [ "mpv.desktop" ] else null;
       in

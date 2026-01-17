@@ -1,5 +1,5 @@
-{ pkgs, ... }:
+{ pkgs, pkgs-unstable, ... }:
 
 {
-  home.packages = [ pkgs.zulu21 ];
+  programs.gradle.enable = true;
 }

@@ -2,11 +2,11 @@
   description = "mozbeel";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
     home-manager = {
-      url = "github:nix-community/home-manager/release-25.05";
+      url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -67,6 +67,8 @@
           nixgl.overlay
 
           inputs.zig.overlays.default
+
+          inputs.nur.overlays.default
         ];
       };
 
@@ -87,13 +89,25 @@
         };
     in
     {
-      packages = {
-        x86_64-linux = {
-          default = inputs.hyprland.packages.${system}.hyprland;
-        };
-      };
+      # packages = {
+      #   x86_64-linux = {
+      #     default = inputs.hyprland.packages.${system}.hyprland;
+      #   };
+      # };
 
-      defaultPackage = inputs.hyprland.packages.${system}.hyprland;
+      # defaultPackage = inputs.hyprland.packages.${system}.hyprland;
+
+      nixpkgs.config.permittedInsecurePackages = [
+        "qtwebengine-5.15.19"
+      ];
+
+      # nixpkgs.overlays = [
+      #   (final: prev: {
+      #     ns = prev.ns.overrideAttrs (old: {
+      #       doCheck = false;
+      #     });
+      #   })
+      # ];
 
       nixosConfigurations = {
         nebula = nixosSystem ./machines/nebula/nixos {
