@@ -42,6 +42,9 @@
 
     zig.url = "github:mitchellh/zig-overlay";
     zls.url = "github:zigtools/zls";
+
+    opencode.url = "github:anomalyco/opencode";
+    rime.url = "github:lukasl-dev/rime";
   };
 
   outputs =

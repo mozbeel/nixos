@@ -34,6 +34,7 @@
     ../../../homeModules/programs/yazi.nix
     ../../../homeModules/programs/zip.nix
     ../../../homeModules/programs/zoxide.nix
+    ../../../homeModules/programs/opencode.nix
 
     ../../../homeModules/security/ssh.nix
 

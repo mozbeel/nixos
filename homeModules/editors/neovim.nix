@@ -51,6 +51,7 @@
       nodejs
 
       asm-lsp
+      vue-language-server
     ];
   };
 
